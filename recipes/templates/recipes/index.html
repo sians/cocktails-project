@@ -1,7 +1,28 @@
-{% for recipe in recipes.all %}
-  <div class="recipe-card">
-    <h4>{{ recipe.name }}</h4>
-    <p>{{ recipe.summary }}</p>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
 
+  {% include 'recipes/hero.html' %}
+
+  <div class="recipe-index">
+    {% for recipe in recipes.all %}
+      <div class="recipe-card">
+        <div>
+          {% if recipe.image %}
+            <image src="{{ recipe.image.url }}" class="recipe-img">
+          {% else %}
+            <p>no image</p>
+          {% endif %}
+        </div>
+        <div class="recipe-details">
+          <a href="{% url 'recipe' recipe.id %}">
+            <h4>{{ recipe.name }}</h4>
+          </a>
+
+          <p>{{ recipe.summary }}</p>
+        </div>
+      </div>
+    {% endfor %}
   </div>
-{% endfor %}
+
+{% endblock content %}

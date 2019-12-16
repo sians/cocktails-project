@@ -1,0 +1,6 @@
+.hero {
+  height: calc(80vh - 70px);
+  width: 100%;
+  background-size: cover;
+  background-position: center right;
+}

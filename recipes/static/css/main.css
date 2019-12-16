@@ -1,0 +1,28 @@
+@import 'components/nav.css';
+@import 'components/hero.css';
+@import 'components/card.css';
+
+@import 'pages/index.css';
+
+body {
+  padding: 0px;
+  margin: 0px;
+  /* background-color: black;
+  color: white; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "masqualero-stencil", sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}

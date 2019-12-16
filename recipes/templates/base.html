@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+    <head>
+        <title>Index</title>
+        <!-- <link href="main.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="https://use.typekit.net/bkv8upi.css">
+
+
+    </head>
+
+    <body>
+        <nav>
+          <ul>
+            <li>search</li>
+            <li>ingredients</li>
+            <li>recipes</li>
+          </ul>
+        </nav>
+        <section class="content">
+            {% block content %}
+            {% endblock content %}
+        </section>
+
+        <footer>
+        <p></p>
+        </footer>
+
+    </body>
+</html>

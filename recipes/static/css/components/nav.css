@@ -1,0 +1,23 @@
+nav {
+  background-color: black;
+  color: white;
+  height: 50px;
+  padding: 10px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  font-family: "masqualero-stencil", sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
