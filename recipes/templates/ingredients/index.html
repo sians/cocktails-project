@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'ingredients/hero.html' %}
+
+<div class="ingredient-index">
+  {% for ingredient in ingredients %}
+    <div class="ingredient-card">
+      <p>{{ingredient.name}}</p>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock content %}

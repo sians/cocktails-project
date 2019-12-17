@@ -25,6 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('recipes', recipes.views.index, name='recipes'),
     path('recipes/<int:recipe_id>', recipes.views.show, name="recipe"),
+    path('ingredients', recipes.views.ingredients_index, name="ingredients"),
+    path('ingredients/<int:ingredient_id>', recipes.views.ingredients_show, name="ingredient")
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

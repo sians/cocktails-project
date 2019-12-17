@@ -4,9 +4,9 @@
 
   {% include 'recipes/hero.html' %}
 
-  <div class="recipe-index">
+  <div class="recipe-index list-container">
     {% for recipe in recipes.all %}
-      <div class="recipe-card">
+      <div class="recipe-card list-card">
         <div>
           {% if recipe.image %}
             <image src="{{ recipe.image.url }}" class="recipe-img">
@@ -18,8 +18,6 @@
           <a href="{% url 'recipe' recipe.id %}">
             <h4>{{ recipe.name }}</h4>
           </a>
-
-          <p>{{ recipe.summary }}</p>
         </div>
       </div>
     {% endfor %}

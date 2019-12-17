@@ -7,16 +7,16 @@
         <!-- <link href="main.css" rel="stylesheet"> -->
         <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
         <link rel="stylesheet" href="https://use.typekit.net/bkv8upi.css">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     </head>
 
     <body>
         <nav>
           <ul>
-            <li>search</li>
-            <li>ingredients</li>
-            <li>recipes</li>
+            <li><i class="fas fa-search"></i></li>
+            <li><a href="{% url 'ingredients' %}" class="nav-link">ingredients</a></li>
+            <li><a href="{% url 'recipes' %}" class="nav-link active">recipes</a></li>
           </ul>
         </nav>
         <section class="content">

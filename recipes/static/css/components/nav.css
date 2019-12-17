@@ -1,8 +1,11 @@
 nav {
   background-color: black;
   color: white;
-  height: 50px;
+  height: 110px;
   padding: 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 ul {
@@ -12,6 +15,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 li {
@@ -20,4 +24,8 @@ li {
   font-family: "masqualero-stencil", sans-serif;
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+a.active {
+  color: #dc676a;
 }

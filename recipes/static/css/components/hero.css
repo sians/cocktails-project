@@ -1,6 +1,36 @@
 .hero {
-  height: calc(80vh - 70px);
+  height: calc(100vh - 110px);
   width: 100%;
   background-size: cover;
   background-position: center right;
+  position: relative;
+  color: white;
+}
+
+.hero .side-bar {
+  background-color: black;
+  width: 130px;
+  height: calc(100vh - 110px)
+}
+
+.hero h1 {
+  font-size: 7rem;
+  position: absolute;
+  top: -70px;
+  left: 40px;
+  letter-spacing: 10px;
+  z-index: 2;
+}
+
+.hero .social {
+  position: fixed;
+  top: 170px;
+  right: 20px;
+  font-size: 2rem;
+}
+
+.social ul {
+  justify-content: space-around;
+  flex-direction: column;
+  height: 200px;
 }
