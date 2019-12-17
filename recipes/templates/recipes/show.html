@@ -2,8 +2,21 @@
 {% load static %}
 {% block content %}
 
-  show
-  {{recipe.name}}
+<div class="show-container">
+  <div class="show-img" style="background-image: url('{{ recipe.image.url }}')">
+    <h2>{{recipe.name}}</h2>
+
+  </div>
+
+  <div class="main-details">
+    {% for dose in recipe.doses.all %}
+      <p>{{ dose.description }} {{ dose.ingredient.name }}</p>
+    {% endfor %}
+
+    {{recipe.summary}}
+  </div>
+
+</div>
 
 
 {% endblock %}

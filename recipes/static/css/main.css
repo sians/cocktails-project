@@ -3,17 +3,28 @@
 @import 'components/card.css';
 
 @import 'pages/index.css';
+@import 'pages/show.css';
 
 body {
   padding: 0px;
   margin: 0px;
-  /* background-color: black;
-  color: white; */
+  background-color: black;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "masqualero-stencil", sans-serif;
   margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
 }
 
 a {
@@ -25,4 +36,13 @@ a {
 a:hover {
   text-decoration: none;
   color: black;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 1rem;
+}
+
+.pink {
+  color: #dc676a;
 }
